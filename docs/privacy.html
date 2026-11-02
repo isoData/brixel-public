@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brixel Upload — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --subtle: #6b6b6b;
+    --border: #e4e4e4;
+    --accent: #e63e00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111111;
+      --fg: #f0f0f0;
+      --subtle: #909090;
+      --border: #2a2a2a;
+      --accent: #ff6030;
+    }
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 3rem 1.5rem;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1rem;
+  }
+  h1 { font-size: 1.8rem; font-weight: 600; margin: 0 0 0.4rem; }
+  .meta {
+    font-size: 14px;
+    color: var(--subtle);
+    margin: 0 0 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 { font-size: 1rem; font-weight: 600; margin: 2rem 0 0.4rem; }
+  p { margin: 0 0 1rem; }
+  .contact {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--subtle);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Privacy Policy</p>
+  <h1>Brixel Upload</h1>
+  <p class="meta">Effective date: 2 November 2026 &nbsp;·&nbsp; Single-user internal tool</p>
+
+  <h2>What this tool is</h2>
+  <p>Brixel Upload is a command-line script used solely by the channel owner (Tobias Burri) to upload videos to the Brixel YouTube channel via the YouTube Data API v3. It is not a public application and has no other users.</p>
+
+  <h2>Data collected</h2>
+  <p>The tool accesses the owner's YouTube account via OAuth 2.0 to upload videos and set scheduling metadata (title, description, publish date, thumbnail). No data from any third party is accessed, stored, or transmitted.</p>
+
+  <h2>OAuth credentials</h2>
+  <p>An OAuth token is stored locally on the owner's machine in a file readable only by the owner (mode 0600). It is never shared with any other service or person.</p>
+
+  <h2>Third parties</h2>
+  <p>No analytics, advertising, or tracking services are used. The only external service this tool communicates with is the YouTube Data API (Google LLC).</p>
+
+  <h2>Data retention</h2>
+  <p>No user data is retained beyond the OAuth token stored locally. Revoking access via Google Account settings immediately invalidates that token.</p>
+
+  <div class="contact">
+    Questions: tb.burri@gmail.com
+  </div>
+</div>
+</body>
+</html>
